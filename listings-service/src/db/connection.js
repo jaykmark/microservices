@@ -9,7 +9,7 @@ const sequelize = new Sequelize(DB_URI, {
     charset: 'utf8',
     multipleStatements: true,
   },
-  logging: false,
+  logging: false
 });
 
-export default sequelize; 
+export default sequelize;
