@@ -15,5 +15,5 @@ Listing.init({
   }, {
     modelName: 'listings',
     sequelize,
-  }
-) 
+  },
+)
