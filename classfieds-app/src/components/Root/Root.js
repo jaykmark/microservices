@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Login from "../Login";
+
 const Wrapper = styled.div`
   box-sizing: border-box;
   height: 100%;
@@ -27,7 +29,9 @@ function Root() {
     <Wrapper>
       <Container>
         <Content>WAKE UP ITS TIME TO SIN</Content>
-        <Sidebar>SIDECHICK</Sidebar>
+        <Sidebar>
+          <Login />
+        </Sidebar>
       </Container>
     </Wrapper>
   );

@@ -59,6 +59,18 @@ const setupRoutes = app => {
       return next(err);
     }
   });
+
+  app.get('/users/:userId', async (req, res, next) => {
+    try {
+      const user = await User.findByPk(req.params.userId);
+
+      if (!user) return next(new Error('Invalid User ID'))
+
+      return res.json(user);
+    } catch (err) {
+      return next(err);
+    }
+  })
 };
 
 export default setupRoutes;
